@@ -187,7 +187,7 @@ func main() {
   time.Sleep(3 * time.Second)
   // huffman coding tree
   var root *node
-  step := uint64(100000)
+  step := uint64(1e6)
   for sum := uint64(0); sum < budget; sum = sum + step {
     fmt.Println(sum, hit)
     destoryCodingTree(root)
